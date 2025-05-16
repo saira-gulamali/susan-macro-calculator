@@ -1,6 +1,5 @@
-import React from 'react';
-import NutritionCalculator from './components/NutritionCalculator';
-import { CalculatorProvider } from './context/CalculatorContext';
+import NutritionCalculator from "./components/NutritionCalculator";
+import { CalculatorProvider } from "./context/CalculatorContext";
 
 function App() {
   return (
@@ -12,12 +11,20 @@ function App() {
               Nutrition Macro Calculator
             </h1>
             <p className="text-gray-600">
-              Calculate your daily calorie and macronutrient targets based on your goals
+              Calculate your daily calorie and macronutrient targets based on
+              your goals
             </p>
           </header>
           <NutritionCalculator />
         </div>
       </CalculatorProvider>
+
+      <a
+        href="https://saira-gulamali.mvt.so/macro-tracker"
+        className="fixed bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded shadow-lg hover:bg-blue-700 transition duration-300"
+      >
+        Return to Susan Fitness
+      </a>
     </div>
   );
 }
